@@ -77,7 +77,7 @@ section {
   background-size: 70%;
   right: 0;
 }
-/* .prev-white {
+.prev-white {
   position: absolute;
   background: transparent url(../img/features/left-arrow-white.png) center center no-repeat;
   background-size: 70%;
@@ -88,7 +88,7 @@ section {
   background: transparent url(../img/features/right-arrow-white.png) center center no-repeat;
   background-size: 70%;
   right: 0;
-} */
+}
 /* Form */
 .main-form {
   position: relative;

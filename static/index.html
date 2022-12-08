@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,700&amp;subset=cyrillic" rel="stylesheet">
 
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107059497-1"></script>
-
   </head>
   <body>
 
@@ -602,16 +599,18 @@
   </div>
 
 
-  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
   <script src="slick/slick.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script>
 
 
-  <!-- Валидация формы -->
+  <!-- Валидация телефона -->
   <script>
-    jQuery(function($){
-       $("#phone").mask("+7 (999) 999-99-99");
+    const phone = document.querySelector('[name="phone"]')
+    const patternMask = IMask(phone, {
+      mask: '+{7}(000)000-00-00'
     });
   </script>
 
