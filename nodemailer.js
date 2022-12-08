@@ -20,7 +20,7 @@ const mailer = async ({ address, count, date, phone }) => {
   const style = "color: gray; margin-right: 20px; font-size: 12px;";
   const message = {
     from: 'Заявка <waters_service@bk.ru>',
-    to: 'krowen@mail.ru',
+    to: 'waters_service@mail.ru',
     subject: 'Заказ воды с сайта',
     html: `<h2>Данные клиента:</h2>
       <p><span style=${style}>Адрес:</span> <strong>${address}</strong></p>
