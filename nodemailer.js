@@ -19,14 +19,14 @@ const getTransporter = async () => {
 const mailer = async ({ address, count, date, phone }) => {
   const style = "color: gray; margin-right: 20px; font-size: 12px;";
   const message = {
-    from: 'Заявка <waters_service@bk.ru>',
+    from: 'Заказ воды с сайта <waters_service@bk.ru>',
     to: 'waters_service@mail.ru',
-    subject: 'Заказ воды с сайта',
+    subject: 'Заявка',
     html: `<h2>Данные клиента:</h2>
       <p><span style=${style}>Адрес:</span> <strong>${address}</strong></p>
-      <p><span style=${style}>Количество:</span> <strong>${count}</strong></p>
-      <p><span style=${style}>Дата:</span> <strong>${date}</strong></p>
-      <p><span style=${style}>Телефон:</span> <strong>${phone}</strong></p>
+      <p><span style=${style}>Количество бутылок:</span> <strong>${count}</strong></p>
+      <p><span style=${style}>Дата поставки:</span> <strong>${date}</strong></p>
+      <p><span style=${style}>Контактный телефон:</span> <strong>${phone}</strong></p>
     `
   }
 
