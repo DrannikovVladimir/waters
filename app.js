@@ -1,11 +1,10 @@
-import express from "express";
-import path from 'path';
-import bodyParser from 'body-parser';
-import mailer from "./nodemailer.js";
+const express = require("express");
+const path = require('path');
+const bodyParser = require('body-parser');
+const mailer = require("./nodemailer.js");
 
 const PORT = process.env.PORT ?? 3000;
 const app = express();
-const __dirname = path.resolve();
 
 app.use(express.static(path.resolve(__dirname, 'static')));
 app.use(express.json());

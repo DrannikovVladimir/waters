@@ -1,5 +1,5 @@
-import nodemailer from 'nodemailer';
-import * as dotEnv from 'dotenv';
+const nodemailer = require('nodemailer');
+const dotEnv = require('dotenv');
 dotEnv.config({ path: '.env'});
 
 const getTransporter = async () => {
@@ -42,4 +42,4 @@ const mailer = async ({ address, count, date, phone }) => {
   });
 };
 
-export default mailer;
+module.exports = mailer;

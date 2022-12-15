@@ -2,11 +2,7 @@
   "name": "coolwaters.kz",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
-  "engines": {
-    "node": ">=16.18.1"
-  },
+  "main": "app.js",
    "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
